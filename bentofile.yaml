@@ -1,0 +1,22 @@
+service: "src.service:reg_service"
+
+description: "Predict the chance of admission of a student in a university"
+
+labels:
+  owner: "DataScientest" 
+  project: "Admissions Prediction" 
+     
+include:
+  - '*.py'
+
+python:
+    packages:
+      - scikit-learn 
+      - pandas 
+      - PyJWT 
+      - numpy 
+      - bentoml 
+      - pydantic 
+      - requests 
+
+    
